@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31515.178
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cadmus.Refs.Bricks", "Cadmus.Refs.Bricks\Cadmus.Refs.Bricks.csproj", "{277783C0-5638-4C49-9FE4-0E5A2BDC9F9C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cadmus.Prosopa.Bricks", "Cadmus.Prosopa.Bricks\Cadmus.Prosopa.Bricks.csproj", "{AEF9E811-0F03-438F-BC57-BFFA6F37A1EA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{74FF188D-51EE-420C-BDCA-A359C0B4A3B7}"
+	ProjectSection(SolutionItems) = preProject
+		Pack.bat = Pack.bat
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{277783C0-5638-4C49-9FE4-0E5A2BDC9F9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{277783C0-5638-4C49-9FE4-0E5A2BDC9F9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{277783C0-5638-4C49-9FE4-0E5A2BDC9F9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{277783C0-5638-4C49-9FE4-0E5A2BDC9F9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AEF9E811-0F03-438F-BC57-BFFA6F37A1EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEF9E811-0F03-438F-BC57-BFFA6F37A1EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEF9E811-0F03-438F-BC57-BFFA6F37A1EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEF9E811-0F03-438F-BC57-BFFA6F37A1EA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {76C59171-7F52-4469-9F46-3E5695452011}
+	EndGlobalSection
+EndGlobal
