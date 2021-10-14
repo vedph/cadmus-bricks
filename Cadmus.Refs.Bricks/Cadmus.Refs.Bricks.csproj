@@ -9,10 +9,14 @@
     <Product>Cadmus</Product>
     <Description>Cadmus references components.</Description>
     <NeutralLanguage>en-US</NeutralLanguage>
-    <Version>1.0.0</Version>
+    <Version>2.0.1</Version>
     <PackageLicenseExpression>GPL-3.0-or-later</PackageLicenseExpression>
     <Copyright>by Daniele Fusi</Copyright>
     <PackageTags>Cadmus;references;bricks</PackageTags>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Fusi.Antiquity" Version="1.2.0" />
+  </ItemGroup>
 
 </Project>

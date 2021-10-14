@@ -2,12 +2,12 @@
 using System.Linq;
 using System.Text;
 
-namespace Cadmus.Prosopa.Bricks
+namespace Cadmus.Refs.Bricks
 {
     /// <summary>
-    /// A person's name. This is taken from project Itinera.
+    /// A generic proper name, composed of <see cref="ProperNamePiece"/>'s.
     /// </summary>
-    public class PersonName
+    public class ProperName
     {
         /// <summary>
         /// Gets or sets the language. Usually this is an ISO639-3 identifier.
@@ -25,14 +25,14 @@ namespace Cadmus.Prosopa.Bricks
         /// Note that parts types are not unique in a name: for instance, you
         /// might have a person with 2 first names.
         /// </summary>
-        public List<PersonNamePart> Parts { get; set; }
+        public List<ProperNamePiece> Pieces { get; set; }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="PersonName"/> class.
+        /// Initializes a new instance of the <see cref="ProperName"/> class.
         /// </summary>
-        public PersonName()
+        public ProperName()
         {
-            Parts = new List<PersonNamePart>();
+            Pieces = new List<ProperNamePiece>();
         }
 
         /// <summary>
@@ -40,7 +40,7 @@ namespace Cadmus.Prosopa.Bricks
         /// </summary>
         /// <returns>The full name, eventually empty if no parts.</returns>
         public string GetFullName() =>
-            Parts?.Count > 0 ? string.Join(" ", from p in Parts select p.Value) : "";
+            Pieces?.Count > 0 ? string.Join(" ", from p in Pieces select p.Value) : "";
 
         /// <summary>
         /// Converts to string.
@@ -50,43 +50,14 @@ namespace Cadmus.Prosopa.Bricks
         /// </returns>
         public override string ToString()
         {
-            if (Parts == null || Parts.Count == 0) return base.ToString();
+            if (Pieces == null || Pieces.Count == 0) return base.ToString();
 
-            StringBuilder sb = new StringBuilder(string.Join(" ", Parts));
+            StringBuilder sb = new StringBuilder(string.Join(" ", Pieces));
             if (!string.IsNullOrEmpty(Tag))
                 sb.Append(" [").Append(Tag).Append(']');
             if (!string.IsNullOrEmpty(Language))
                 sb.Append(" <").Append(Language).Append('>');
             return sb.ToString();
-        }
-    }
-
-    /// <summary>
-    /// A part of a <see cref="PersonName"/>.
-    /// </summary>
-    public class PersonNamePart
-    {
-        /// <summary>
-        /// Gets or sets the name part's type, like first name, last name,
-        /// patronymic, epithet, etc.
-        /// </summary>
-        public string Type { get; set; }
-
-        /// <summary>
-        /// Gets or sets the name part's value.
-        /// </summary>
-        public string Value { get; set; }
-
-        /// <summary>
-        /// Converts to string.
-        /// </summary>
-        /// <returns>
-        /// A <see cref="string" /> that represents this instance.
-        /// </returns>
-        public override string ToString()
-        {
-            return string.IsNullOrEmpty(Type) ?
-                Value : $"{Value} [{Type}]";
         }
     }
 }

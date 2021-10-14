@@ -17,7 +17,7 @@ namespace Cadmus.Prosopa.Bricks
         /// <summary>
         /// Gets or sets the source(s) for this cited thing.
         /// </summary>
-        public List<DocReference> Sources { get; set; }
+        public List<WorkReference> Sources { get; set; }
 
         /// <summary>
         /// Initializes a new instance of the <see cref="CitedBase"/> class.
@@ -25,7 +25,7 @@ namespace Cadmus.Prosopa.Bricks
         protected CitedBase()
         {
             Ids = new List<DecoratedId>();
-            Sources = new List<DocReference>();
+            Sources = new List<WorkReference>();
         }
     }
 }

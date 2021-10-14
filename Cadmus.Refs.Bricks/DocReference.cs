@@ -1,56 +1,55 @@
-﻿namespace Cadmus.Bricks
+﻿using System.Text;
+
+namespace Cadmus.Refs.Bricks
 {
     /// <summary>
-    /// A general purpose, 3-levels short document reference: author, work,
-    /// location, plus some optional metadata. This model can be applied to
-    /// literary references, bibliographic references, archive documents
-    /// references, etc.
+    /// A general purpose documental reference.
     /// </summary>
     public class DocReference
     {
         /// <summary>
-        /// Any classification tag meaningful in the data context.
+        /// Gets or sets the reference type (e.g. ancient work, bibliographic
+        /// entry, manuscript, etc.).
+        /// </summary>
+        public string Type { get; set; }
+
+        /// <summary>
+        /// Gets or sets the optional tag. This is an arbitrary value used
+        /// to classify or group references.
         /// </summary>
         public string Tag { get; set; }
 
         /// <summary>
-        /// The author ID (e.g. <c>Hom.</c>). Apart from this name, which
-        /// reflects its prevalent usage, this is the 1st level of the reference.
-        /// For archive documents, it can be a constant reserved ID. For
-        /// bibliographic references, it's the modern author ID.
+        /// Gets or sets the citation. The conventions adopted in this value
+        /// depend on the <see cref="Type"/>. For instance, you might have
+        /// a cited work with author + comma + title + comma + location,
+        /// or just an author name followed by a year, etc.
         /// </summary>
-        public string Author { get; set; }
+        public string Citation { get; set; }
 
         /// <summary>
-        /// The work ID (e.g. <c>Il.</c>). Apart from this name, which reflects
-        /// its prevalent usage, this is the 2nd level of the reference. For
-        /// archive documents, it can be the archive name. For bibliographic
-        /// references, it's the modern work's title ID.
-        /// </summary>
-        public string Work { get; set; }
-
-        /// <summary>
-        /// The work's location (e.g. <c>12.34</c>). Apart from this name, which
-        /// reflects its prevalent usage, this is the 3rd level of the reference.
-        /// For archive documents, it can be their location in the archive
-        /// (e.g. a signature). For bibliographic references, it's usually a
-        /// page number or other means of locating some passage.
-        /// </summary>
-        public string Location { get; set; }
-
-        /// <summary>
-        /// A generic annotation.
+        /// Gets or sets an optional short note.
         /// </summary>
         public string Note { get; set; }
 
         /// <summary>
         /// Converts to string.
         /// </summary>
-        /// <returns>String.</returns>
+        /// <returns>
+        /// A <see cref="string" /> that represents this instance.
+        /// </returns>
         public override string ToString()
         {
-            return $"{Author}, {Work}, {Location}" +
-                (string.IsNullOrEmpty(Tag) ? "" : $" [{Tag}]");
+            StringBuilder sb = new StringBuilder();
+
+            if (!string.IsNullOrEmpty(Type))
+                sb.Append('<').Append(Type).Append("> ");
+
+            if (!string.IsNullOrEmpty(Tag))
+                sb.Append('[').Append(Tag).Append("] ");
+
+            sb.Append(Citation);
+            return sb.ToString();
         }
     }
 }
