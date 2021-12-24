@@ -1,13 +1,39 @@
-﻿namespace Cadmus.Refs.Bricks
+﻿using System.Text;
+
+namespace Cadmus.Refs.Bricks
 {
     /// <summary>
-    /// A <see cref="Chronotope"/> with an <see cref="Assertion"/>.
+    /// The union of an <see cref="AssertedDate"/> and an
+    /// <see cref="AssertedPlace"/>.
     /// </summary>
-    public class AssertedChronotope : Chronotope, IHasAssertion
+    public class AssertedChronotope
     {
         /// <summary>
-        /// Gets or sets the assertion.
+        /// The place with its <see cref="Assertion"/>.
         /// </summary>
-        public Assertion Assertion { get; set; }
+        public AssertedPlace Place { get; set; }
+
+        /// <summary>
+        /// The date with its <see cref="Assertion"/>.
+        /// </summary>
+        public AssertedDate Date { get; set; }
+
+        /// <summary>
+        /// Converts to string.
+        /// </summary>
+        /// <returns>String.</returns>
+        public override string ToString()
+        {
+            StringBuilder sb = new StringBuilder();
+
+            if (Place != null) sb.Append(Place);
+            if (Date != null)
+            {
+                if (Place != null) sb.Append(", ");
+                sb.Append(Date);
+            }
+
+            return sb.ToString();
+        }
     }
 }

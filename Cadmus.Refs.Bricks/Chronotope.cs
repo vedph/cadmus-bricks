@@ -26,11 +26,6 @@ namespace Cadmus.Refs.Bricks
         public HistoricalDate Date { get; set; }
 
         /// <summary>
-        /// Gets or sets an optional short note.
-        /// </summary>
-        public string Note { get; set; }
-
-        /// <summary>
         /// Converts to string.
         /// </summary>
         /// <returns>

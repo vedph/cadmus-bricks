@@ -1,25 +1,23 @@
-﻿using Fusi.Antiquity.Chronology;
-
-namespace Cadmus.Refs.Bricks
+﻿namespace Cadmus.Refs.Bricks
 {
     /// <summary>
-    /// A <see cref="HistoricalDate"/> with an <see cref="Assertion"/>.
+    /// A place with an <see cref="Assertion"/>.
     /// </summary>
-    public class AssertedDate : IHasAssertion
+    public class AssertedPlace : IHasAssertion
     {
         /// <summary>
         /// Gets or sets the optional tag. This is an arbitrary value used
-        /// to classify or group chronotopes.
+        /// to classify or group places.
         /// </summary>
         public string Tag { get; set; }
 
         /// <summary>
-        /// Gets or sets the date.
+        /// Place value: usually this is an ID or a conventional name.
         /// </summary>
-        public HistoricalDate Value { get; set; }
+        public string Value { get; set; }
 
         /// <summary>
-        /// Gets or sets the assertion.
+        /// An optional assertion.
         /// </summary>
         public Assertion Assertion { get; set; }
 
@@ -29,7 +27,7 @@ namespace Cadmus.Refs.Bricks
         /// <returns>String.</returns>
         public override string ToString()
         {
-            return Value?.ToString() ?? base.ToString();
+            return Value;
         }
     }
 }
