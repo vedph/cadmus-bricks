@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using System;
+using System.Text;
 
 namespace Cadmus.Refs.Bricks
 {
@@ -21,6 +22,27 @@ namespace Cadmus.Refs.Bricks
         /// Gets or sets the scope of this ID.
         /// </summary>
         public string Scope { get; set; }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ExternalId"/> class.
+        /// </summary>
+        public ExternalId()
+        {
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ExternalId"/> class.
+        /// </summary>
+        /// <param name="id">The identifier to set this ID to.</param>
+        /// <exception cref="ArgumentNullException">id</exception>
+        public ExternalId(ExternalId id)
+        {
+            if (id is null) throw new ArgumentNullException(nameof(id));
+
+            Tag = id.Tag;
+            Value = id.Value;
+            Scope = id.Scope;
+        }
 
         /// <summary>
         /// Converts to string.
