@@ -6,9 +6,9 @@
     public class AssertedProperName : IHasAssertion
     {
         /// <summary>
-        /// The name.
+        /// The name's value.
         /// </summary>
-        public ProperName Name { get; set; }
+        public ProperName Value { get; set; }
 
         /// <summary>
         /// Gets or sets the assertion.
@@ -21,7 +21,7 @@
         /// <returns>String.</returns>
         public override string ToString()
         {
-            return Name?.ToString() ?? base.ToString();
+            return Value?.ToString() ?? base.ToString();
         }
     }
 }
