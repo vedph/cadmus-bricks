@@ -11,13 +11,13 @@ namespace Cadmus.Refs.Bricks
         /// Gets or sets the reference type (e.g. ancient work, bibliographic
         /// entry, manuscript, etc.).
         /// </summary>
-        public string Type { get; set; }
+        public string? Type { get; set; }
 
         /// <summary>
         /// Gets or sets the optional tag. This is an arbitrary value used
         /// to classify or group references.
         /// </summary>
-        public string Tag { get; set; }
+        public string? Tag { get; set; }
 
         /// <summary>
         /// Gets or sets the citation. The conventions adopted in this value
@@ -25,12 +25,12 @@ namespace Cadmus.Refs.Bricks
         /// a cited work with author + comma + title + comma + location,
         /// or just an author name followed by a year, etc.
         /// </summary>
-        public string Citation { get; set; }
+        public string? Citation { get; set; }
 
         /// <summary>
         /// Gets or sets an optional short note.
         /// </summary>
-        public string Note { get; set; }
+        public string? Note { get; set; }
 
         /// <summary>
         /// Converts to string.
@@ -40,7 +40,7 @@ namespace Cadmus.Refs.Bricks
         /// </returns>
         public override string ToString()
         {
-            StringBuilder sb = new StringBuilder();
+            StringBuilder sb = new();
 
             if (!string.IsNullOrEmpty(Type))
                 sb.Append('<').Append(Type).Append("> ");

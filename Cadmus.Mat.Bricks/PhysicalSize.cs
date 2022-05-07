@@ -12,27 +12,27 @@ namespace Cadmus.Mat.Bricks
         /// Gets or sets an optional tag used to categorize or group several
         /// sizes.
         /// </summary>
-        public string Tag { get; set; }
+        public string? Tag { get; set; }
 
         /// <summary>
         /// Gets or sets the width.
         /// </summary>
-        public PhysicalDimension W { get; set; }
+        public PhysicalDimension? W { get; set; }
 
         /// <summary>
         /// Gets or sets the height.
         /// </summary>
-        public PhysicalDimension H { get; set; }
+        public PhysicalDimension? H { get; set; }
 
         /// <summary>
         /// Gets or sets the depth.
         /// </summary>
-        public PhysicalDimension D { get; set; }
+        public PhysicalDimension? D { get; set; }
 
         /// <summary>
         /// Gets or sets an optional note.
         /// </summary>
-        public string Note {get; set; }
+        public string? Note {get; set; }
 
         /// <summary>
         /// Converts to string.
@@ -42,7 +42,7 @@ namespace Cadmus.Mat.Bricks
         /// </returns>
         public override string ToString()
         {
-            StringBuilder sb = new StringBuilder();
+            StringBuilder sb = new();
 
             if (!string.IsNullOrEmpty(Tag))
                 sb.Append('[').Append(Tag).Append("] ");

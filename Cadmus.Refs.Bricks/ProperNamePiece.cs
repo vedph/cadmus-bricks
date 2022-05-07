@@ -9,12 +9,12 @@
         /// Gets or sets the name piece's type, like first name, last name,
         /// patronymic, epithet, etc.
         /// </summary>
-        public string Type { get; set; }
+        public string? Type { get; set; }
 
         /// <summary>
         /// Gets or sets the name piece's value.
         /// </summary>
-        public string Value { get; set; }
+        public string? Value { get; set; }
 
         /// <summary>
         /// Converts to string.
@@ -24,8 +24,8 @@
         /// </returns>
         public override string ToString()
         {
-            return string.IsNullOrEmpty(Type) ?
-                Value : $"{Value} [{Type}]";
+            return (string.IsNullOrEmpty(Type) ?
+                Value : $"{Value} [{Type}]") ?? base.ToString()!;
         }
     }
 }

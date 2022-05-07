@@ -9,17 +9,17 @@
         /// Gets or sets the optional tag. This is an arbitrary value used
         /// to classify or group places.
         /// </summary>
-        public string Tag { get; set; }
+        public string? Tag { get; set; }
 
         /// <summary>
         /// Place value: usually this is an ID or a conventional name.
         /// </summary>
-        public string Value { get; set; }
+        public string? Value { get; set; }
 
         /// <summary>
         /// An optional assertion.
         /// </summary>
-        public Assertion Assertion { get; set; }
+        public Assertion? Assertion { get; set; }
 
         /// <summary>
         /// Converts to string.
@@ -27,7 +27,7 @@
         /// <returns>String.</returns>
         public override string ToString()
         {
-            return Value;
+            return Value ?? base.ToString()!;
         }
     }
 }

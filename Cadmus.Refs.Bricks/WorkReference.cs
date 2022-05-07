@@ -14,7 +14,7 @@ namespace Cadmus.Bricks
         /// <summary>
         /// Any classification tag meaningful in the data context.
         /// </summary>
-        public string Tag { get; set; }
+        public string? Tag { get; set; }
 
         /// <summary>
         /// The author ID (e.g. <c>Hom.</c>). Apart from this name, which
@@ -22,7 +22,7 @@ namespace Cadmus.Bricks
         /// For archive documents, it can be a constant reserved ID. For
         /// bibliographic references, it's the modern author ID.
         /// </summary>
-        public string Author { get; set; }
+        public string? Author { get; set; }
 
         /// <summary>
         /// The work ID (e.g. <c>Il.</c>). Apart from this name, which reflects
@@ -30,7 +30,7 @@ namespace Cadmus.Bricks
         /// archive documents, it can be the archive name. For bibliographic
         /// references, it's the modern work's title ID.
         /// </summary>
-        public string Work { get; set; }
+        public string? Work { get; set; }
 
         /// <summary>
         /// The work's location (e.g. <c>12.34</c>). Apart from this name, which
@@ -39,12 +39,12 @@ namespace Cadmus.Bricks
         /// (e.g. a signature). For bibliographic references, it's usually a
         /// page number or other means of locating some passage.
         /// </summary>
-        public string Location { get; set; }
+        public string? Location { get; set; }
 
         /// <summary>
         /// A generic annotation.
         /// </summary>
-        public string Note { get; set; }
+        public string? Note { get; set; }
 
         /// <summary>
         /// Converts to string.

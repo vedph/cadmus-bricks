@@ -8,10 +8,11 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{74FF188D-51EE-420C-BDCA-A359C0B4A3B7}"
 	ProjectSection(SolutionItems) = preProject
 		Pack.bat = Pack.bat
+		Push.bat = Push.bat
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cadmus.Mat.Bricks", "Cadmus.Mat.Bricks\Cadmus.Mat.Bricks.csproj", "{709B4EE3-203F-4CF2-B20A-A2A51CE0C434}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cadmus.Mat.Bricks", "Cadmus.Mat.Bricks\Cadmus.Mat.Bricks.csproj", "{709B4EE3-203F-4CF2-B20A-A2A51CE0C434}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

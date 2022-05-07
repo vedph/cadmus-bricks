@@ -8,13 +8,13 @@
         /// <summary>
         /// Gets or sets the identifier of the entity being counted.
         /// </summary>
-        public string Id { get; set; }
+        public string? Id { get; set; }
 
         /// <summary>
         /// Gets or sets a generic tag optionally used to group or classify
         /// counts.
         /// </summary>
-        public string Tag { get; set; }
+        public string? Tag { get; set; }
 
         /// <summary>
         /// Gets or sets the count value.
@@ -24,7 +24,7 @@
         /// <summary>
         /// Gets or sets an optional note.
         /// </summary>
-        public string Note { get; set; }
+        public string? Note { get; set; }
 
         /// <summary>
         /// Converts to string.

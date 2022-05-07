@@ -12,18 +12,18 @@ namespace Cadmus.Refs.Bricks
         /// Gets or sets the optional tag. This is an arbitrary value used
         /// to classify or group chronotopes.
         /// </summary>
-        public string Tag { get; set; }
+        public string? Tag { get; set; }
 
         /// <summary>
         /// Gets or sets the place. This can be some ID, or the place name
         /// following some conventions.
         /// </summary>
-        public string Place { get; set; }
+        public string? Place { get; set; }
 
         /// <summary>
         /// Gets or sets the date.
         /// </summary>
-        public HistoricalDate Date { get; set; }
+        public HistoricalDate? Date { get; set; }
 
         /// <summary>
         /// Converts to string.
@@ -33,7 +33,7 @@ namespace Cadmus.Refs.Bricks
         /// </returns>
         public override string ToString()
         {
-            StringBuilder sb = new StringBuilder();
+            StringBuilder sb = new();
             if (!string.IsNullOrEmpty(Tag))
                 sb.Append('[').Append(Tag).Append("] ");
 

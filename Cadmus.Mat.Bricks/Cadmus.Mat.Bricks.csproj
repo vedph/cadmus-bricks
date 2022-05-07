@@ -1,7 +1,8 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
+	<Nullable>enable</Nullable>
 	<IncludeSymbols>true</IncludeSymbols>
 	<SymbolPackageFormat>snupkg</SymbolPackageFormat>
 	<Authors>Daniele Fusi</Authors>
@@ -9,10 +10,12 @@
 	<Product>Cadmus</Product>
 	<Description>Cadmus material description components.</Description>
 	<NeutralLanguage>en-US</NeutralLanguage>
-	<Version>1.0.0</Version>
+	<Version>3.0.0</Version>
 	<PackageLicenseExpression>GPL-3.0-or-later</PackageLicenseExpression>
 	<Copyright>by Daniele Fusi</Copyright>
 	<PackageTags>Cadmus;material;bricks</PackageTags>
+	<FileVersion>3.0.0</FileVersion>
+	<AssemblyVersion>3.0.0</AssemblyVersion>
   </PropertyGroup>
 
 </Project>

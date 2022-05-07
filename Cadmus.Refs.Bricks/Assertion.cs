@@ -13,7 +13,7 @@ namespace Cadmus.Refs.Bricks
         /// Gets or sets the optional tag. This is an arbitrary value used
         /// to classify or group assertions.
         /// </summary>
-        public string Tag { get; set; }
+        public string? Tag { get; set; }
 
         /// <summary>
         /// Gets or sets the assertion's rank; 0=undefined, 1-N a rank where
@@ -25,12 +25,12 @@ namespace Cadmus.Refs.Bricks
         /// Gets or sets the optional documental references supporting this
         /// assertion.
         /// </summary>
-        public List<DocReference> References { get; set; }
+        public List<DocReference>? References { get; set; }
 
         /// <summary>
         /// Gets or sets an optional short note.
         /// </summary>
-        public string Note { get; set; }
+        public string? Note { get; set; }
 
         /// <summary>
         /// Initializes a new instance of the <see cref="Assertion"/> class.
@@ -48,7 +48,7 @@ namespace Cadmus.Refs.Bricks
         /// </returns>
         public override string ToString()
         {
-            StringBuilder sb = new StringBuilder();
+            StringBuilder sb = new();
             if (!string.IsNullOrEmpty(Tag))
                 sb.Append('[').Append(Tag).Append("] ");
             sb.Append(Rank);
@@ -57,16 +57,5 @@ namespace Cadmus.Refs.Bricks
 
             return sb.ToString();
         }
-    }
-
-    /// <summary>
-    /// Interface implemented by any object having an attached <see cref="Assertion"/>.
-    /// </summary>
-    public interface IHasAssertion
-    {
-        /// <summary>
-        /// Gets or sets the assertion.
-        /// </summary>
-        Assertion Assertion { get; set; }
     }
 }

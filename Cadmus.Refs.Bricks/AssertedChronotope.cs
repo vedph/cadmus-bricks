@@ -11,12 +11,12 @@ namespace Cadmus.Refs.Bricks
         /// <summary>
         /// The place with its <see cref="Assertion"/>.
         /// </summary>
-        public AssertedPlace Place { get; set; }
+        public AssertedPlace? Place { get; set; }
 
         /// <summary>
         /// The date with its <see cref="Assertion"/>.
         /// </summary>
-        public AssertedDate Date { get; set; }
+        public AssertedDate? Date { get; set; }
 
         /// <summary>
         /// Converts to string.
@@ -24,7 +24,7 @@ namespace Cadmus.Refs.Bricks
         /// <returns>String.</returns>
         public override string ToString()
         {
-            StringBuilder sb = new StringBuilder();
+            StringBuilder sb = new();
 
             if (Place != null) sb.Append(Place);
             if (Date != null)

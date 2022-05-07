@@ -10,7 +10,7 @@ namespace Cadmus.Refs.Bricks
         /// <summary>
         /// Gets or sets the assertion.
         /// </summary>
-        public Assertion Assertion { get; set; }
+        public Assertion? Assertion { get; set; }
 
         /// <summary>
         /// Initializes a new instance of the <see cref="AssertedProperName"/>

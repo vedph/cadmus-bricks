@@ -12,12 +12,12 @@ namespace Cadmus.Refs.Bricks
         /// Gets or sets the optional tag. This is an arbitrary value used
         /// to classify or group dates.
         /// </summary>
-        public string Tag { get; set; }
+        public string? Tag { get; set; }
 
         /// <summary>
         /// Gets or sets the assertion.
         /// </summary>
-        public Assertion Assertion { get; set; }
+        public Assertion? Assertion { get; set; }
 
         /// <summary>
         /// Initializes a new instance of the <see cref="AssertedDate"/> class.

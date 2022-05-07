@@ -12,20 +12,20 @@ namespace Cadmus.Refs.Bricks
         /// <summary>
         /// Gets or sets the language. Usually this is an ISO639-3 identifier.
         /// </summary>
-        public string Language { get; set; }
+        public string? Language { get; set; }
 
         /// <summary>
         /// Gets or sets the optional tag, used to group several person names;
         /// this can be useful when a person has several names.
         /// </summary>
-        public string Tag { get; set; }
+        public string? Tag { get; set; }
 
         /// <summary>
         /// Gets or sets the parts of this name, in their conventional order.
         /// Note that parts types are not unique in a name: for instance, you
         /// might have a person with 2 first names.
         /// </summary>
-        public List<ProperNamePiece> Pieces { get; set; }
+        public List<ProperNamePiece>? Pieces { get; set; }
 
         /// <summary>
         /// Initializes a new instance of the <see cref="ProperName"/> class.
@@ -50,9 +50,9 @@ namespace Cadmus.Refs.Bricks
         /// </returns>
         public override string ToString()
         {
-            if (Pieces == null || Pieces.Count == 0) return base.ToString();
+            if (Pieces == null || Pieces.Count == 0) return base.ToString()!;
 
-            StringBuilder sb = new StringBuilder(string.Join(" ", Pieces));
+            StringBuilder sb = new(string.Join(" ", Pieces));
             if (!string.IsNullOrEmpty(Tag))
                 sb.Append(" [").Append(Tag).Append(']');
             if (!string.IsNullOrEmpty(Language))
