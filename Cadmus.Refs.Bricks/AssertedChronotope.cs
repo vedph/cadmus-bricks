@@ -27,7 +27,7 @@ namespace Cadmus.Refs.Bricks
             StringBuilder sb = new();
 
             if (Place != null) sb.Append(Place);
-            if (Date != null)
+            if (Date is not null)
             {
                 if (Place != null) sb.Append(", ");
                 sb.Append(Date);

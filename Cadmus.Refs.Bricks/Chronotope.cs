@@ -38,7 +38,7 @@ namespace Cadmus.Refs.Bricks
                 sb.Append('[').Append(Tag).Append("] ");
 
             if (!string.IsNullOrEmpty(Place)) sb.Append(Place);
-            if (Date != null)
+            if (Date is not null)
             {
                 if (!string.IsNullOrEmpty(Place)) sb.Append(", ");
                 sb.Append(Date);

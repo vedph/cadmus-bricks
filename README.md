@@ -6,6 +6,10 @@ Most of these models have a corresponding UI in the [UI bricks](https://github.c
 
 ## History
 
+### 3.0.1
+
+- 2022-05-18: upgraded dependencies to NET 6.0.
+
 ### 3.0.0
 
 - 2022-05-07: upgraded to NET 6.0.

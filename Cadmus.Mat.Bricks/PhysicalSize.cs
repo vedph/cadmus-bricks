@@ -47,20 +47,20 @@ namespace Cadmus.Mat.Bricks
             if (!string.IsNullOrEmpty(Tag))
                 sb.Append('[').Append(Tag).Append("] ");
 
-            if (W?.Value != 0) sb.Append(W.ToString());
+            if (W?.Value != 0) sb.Append(W!.ToString());
 
             if (H?.Value != 0)
             {
                 if (sb.Length > 0) sb.Append(" × ");
-                sb.Append(H.ToString());
+                sb.Append(H!.ToString());
             }
             if (D?.Value != 0)
             {
                 if (sb.Length > 0) sb.Append(" × ");
-                sb.Append(D.ToString());
+                sb.Append(D!.ToString());
             }
 
-            if (sb.Length > 0 && sb[sb.Length - 1] == ' ')
+            if (sb.Length > 0 && sb[^1] == ' ')
                 sb.Remove(sb.Length - 1, 1);
             return sb.ToString();
         }
