@@ -6,6 +6,10 @@ Most of these models have a corresponding UI in the [UI bricks](https://github.c
 
 ## History
 
+### 4.0.1
+
+- 2023-05-22: added `AssertedCompositeId`.
+
 ### 4.0.0
 
 - 2022-11-10: upgraded to NET 7.
