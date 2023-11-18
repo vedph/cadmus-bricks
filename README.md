@@ -1,10 +1,14 @@
-# Cadmus Bricks
+﻿# Cadmus Bricks
 
 This solution includes a set of projects containing only models shared across several different Cadmus parts.
 
 Most of these models have a corresponding UI in the [UI bricks](https://github.com/vedph/cadmus-bricks-shell).
 
 ## History
+
+### 5.0.0
+
+- 2023-11-18: ⚠️ Upgraded to .NET 8.
 
 ### 4.0.2
 
