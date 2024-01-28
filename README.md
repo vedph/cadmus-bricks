@@ -6,6 +6,10 @@ Most of these models have a corresponding UI in the [UI bricks](https://github.c
 
 ## History
 
+### 5.0.1
+
+- 2024-01-28: fix to `PhysicalDimension.ToString()`.
+
 ### 5.0.0
 
 - 2023-11-18: ⚠️ Upgraded to .NET 8.

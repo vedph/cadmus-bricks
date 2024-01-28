@@ -29,7 +29,9 @@
         /// </returns>
         public override string ToString()
         {
-            return $"[{Tag}] {Value} {Unit}";
+            return string.IsNullOrEmpty(Tag)
+                ? $"{Value} {Unit}"
+                : $"[{Tag}] {Value} {Unit}";
         }
     }
 }
