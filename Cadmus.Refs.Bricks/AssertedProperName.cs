@@ -28,7 +28,7 @@ namespace Cadmus.Refs.Bricks
         /// <exception cref="ArgumentNullException">name</exception>
         public AssertedProperName(ProperName name)
         {
-            if (name is null) throw new ArgumentNullException(nameof(name));
+            ArgumentNullException.ThrowIfNull(name);
 
             Language = name.Language;
             Tag = name.Tag;

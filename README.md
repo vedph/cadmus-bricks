@@ -2,9 +2,15 @@
 
 This solution includes a set of projects containing only models shared across several different Cadmus parts.
 
-Most of these models have a corresponding UI in the [UI bricks](https://github.com/vedph/cadmus-bricks-shell).
+Most of these models have a corresponding UI in the [UI bricks](https://github.com/vedph/cadmus-bricks-shell), with a demo site at <https://cadmus-bricks.fusi-soft.com>.
 
 ## History
+
+### 5.0.2
+
+- 2024-06-05:
+  - added an optional label to `ExternalId`.
+  - updated packages.
 
 ### 5.0.1
 

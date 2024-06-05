@@ -33,7 +33,7 @@ namespace Cadmus.Refs.Bricks
         /// <exception cref="ArgumentNullException">date</exception>
         public AssertedDate(HistoricalDate date)
         {
-            if (date is null) throw new ArgumentNullException(nameof(date));
+            ArgumentNullException.ThrowIfNull(date);
 
             A = date.A;
             B = date.B;
