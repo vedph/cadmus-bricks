@@ -6,9 +6,9 @@ Most of these models have a corresponding UI in the [UI bricks](https://github.c
 
 ## History
 
-### 5.0.3
+### 5.0.4
 
-- 2024-07-17: added physical state.
+- 2024-07-17: added physical state and measurement (which was moved here from epigraphy).
 
 ### 5.0.2
 
