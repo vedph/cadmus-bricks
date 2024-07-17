@@ -6,6 +6,10 @@ Most of these models have a corresponding UI in the [UI bricks](https://github.c
 
 ## History
 
+### 5.0.3
+
+- 2024-07-17: added physical state.
+
 ### 5.0.2
 
 - 2024-06-05:
