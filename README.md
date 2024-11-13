@@ -6,6 +6,10 @@ Most of these models have a corresponding UI in the [UI bricks](https://github.c
 
 ## History
 
+### 6.0.0
+
+- 2024-11-13: ⚠️ upgraded to .NET 9.
+
 ### 5.0.4
 
 - 2024-07-17: added physical state and measurement (which was moved here from epigraphy).
