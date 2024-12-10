@@ -7,6 +7,7 @@
 - [assertion](assertion.md)
 - [chronotope](chronotope.md)
 - [datation](datation.md)
+- [documental reference](doc-reference.md)
 - [historical date](historical-date.md)
 - [proper name piece](proper-name-piece.md)
 - [proper name](proper-name.md)
