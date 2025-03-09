@@ -8,6 +8,10 @@ Most of these models have a corresponding UI in the [UI bricks](https://github.c
 
 ## History
 
+### 6.0.1
+
+- 2025-03-09: updated packages.
+
 ### 6.0.0
 
 - 2024-11-13: ⚠️ upgraded to .NET 9.
