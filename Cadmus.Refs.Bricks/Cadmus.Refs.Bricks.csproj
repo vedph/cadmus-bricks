@@ -1,25 +1,25 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <IncludeSymbols>true</IncludeSymbols>
-    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
-    <TargetFramework>net9.0</TargetFramework>
-	<Nullable>enable</Nullable>
-    <Authors>Daniele Fusi</Authors>
-    <Company>Fusi</Company>
-    <Product>Cadmus</Product>
-    <Description>Cadmus references components.</Description>
-    <NeutralLanguage>en-US</NeutralLanguage>
-    <Version>6.0.1</Version>
-    <PackageLicenseExpression>GPL-3.0-or-later</PackageLicenseExpression>
-    <Copyright>by Daniele Fusi</Copyright>
-    <PackageTags>Cadmus;references;bricks</PackageTags>
-    <FileVersion>6.0.1</FileVersion>
-    <AssemblyVersion>6.0.1</AssemblyVersion>
-  </PropertyGroup>
+	<PropertyGroup>
+		<IncludeSymbols>true</IncludeSymbols>
+		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
+		<TargetFramework>net9.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<Authors>Daniele Fusi</Authors>
+		<Company>Fusi</Company>
+		<Product>Cadmus</Product>
+		<Description>Cadmus references components.</Description>
+		<NeutralLanguage>en-US</NeutralLanguage>
+		<PackageLicenseExpression>GPL-3.0-or-later</PackageLicenseExpression>
+		<Copyright>by Daniele Fusi</Copyright>
+		<PackageTags>Cadmus;references;bricks</PackageTags>
+		<Version>6.0.2</Version>
+		<FileVersion>6.0.2</FileVersion>
+		<AssemblyVersion>6.0.2</AssemblyVersion>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Fusi.Antiquity" Version="5.0.1" />
-  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Fusi.Antiquity" Version="5.0.1" />
+	</ItemGroup>
 
 </Project>

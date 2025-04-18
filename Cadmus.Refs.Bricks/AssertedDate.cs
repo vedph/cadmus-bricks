@@ -38,5 +38,16 @@ namespace Cadmus.Refs.Bricks
             A = date.A;
             B = date.B;
         }
+
+        /// <summary>
+        /// Parses a string into an <see cref="AssertedDate"/>.
+        /// </summary>
+        /// <param name="text">Text to parse.</param>
+        /// <returns>Parsed date or null.</returns>
+        public static AssertedDate? Parse(string text)
+        {
+            HistoricalDate? date = HistoricalDate.Parse(text);
+            return date is null ? null : new AssertedDate(date);
+        }
     }
 }
