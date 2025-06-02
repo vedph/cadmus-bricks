@@ -11,6 +11,6 @@
   - roleId (`string`): part role ID.
   - name (`string`): pin name.
   - value (`string`): pin value.
-- scope (`string`): optional ID scope.
-- tag (`string`): optional tag.
+- scope (`string` 📚 `asserted-id-scopes`): optional ID scope.
+- tag (`string` 📚 `asserted-id-tags`): optional tag.
 - assertion (🧱 [Assertion](assertion.md))
