@@ -13,4 +13,6 @@
   - value (`string`): pin value.
 - scope (`string` 📚 `asserted-id-scopes`): optional ID scope.
 - tag (`string` 📚 `asserted-id-tags`): optional tag.
+- features (`string[]`, 📚 `asserted-id-features`, hierarchical): optional features of the link.
+- note (`string`): optional note about the link.
 - assertion (🧱 [Assertion](assertion.md))

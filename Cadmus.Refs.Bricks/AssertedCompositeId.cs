@@ -1,4 +1,6 @@
-﻿namespace Cadmus.Refs.Bricks;
+﻿using System.Collections.Generic;
+
+namespace Cadmus.Refs.Bricks;
 
 /// <summary>
 /// Asserted composite (internal/external) identifier.
@@ -19,6 +21,18 @@ public class AssertedCompositeId : IHasAssertion
     /// Gets or sets an optional tag.
     /// </summary>
     public string? Tag { get; set; }
+
+    /// <summary>
+    /// Gets or sets an optional list of features associated with the object.
+    /// These usually derive from a thesaurus and can be used to connotate
+    /// the type of the link.
+    /// </summary>
+    public List<string>? Features { get; set; }
+
+    /// <summary>
+    /// An optional generic note about the link.
+    /// </summary>
+    public string? Note { get; set; }
 
     /// <summary>
     /// Gets or sets the optional assertion.
