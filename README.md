@@ -8,6 +8,10 @@ Most of these models have a corresponding UI in the [UI bricks](https://github.c
 
 ## History
 
+### 8.0.0
+
+- 2026-02-13: ⚠️ renamed `AssertedDate` to `AssertedHistoricalDate` for uniformity.
+
 ### 7.0.1
 
 - 2026-01-17:

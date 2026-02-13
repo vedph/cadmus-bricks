@@ -1,13 +1,12 @@
-﻿namespace Cadmus.Refs.Bricks
+﻿namespace Cadmus.Refs.Bricks;
+
+/// <summary>
+/// Interface implemented by any object having an attached <see cref="Assertion"/>.
+/// </summary>
+public interface IHasAssertion
 {
     /// <summary>
-    /// Interface implemented by any object having an attached <see cref="Assertion"/>.
+    /// Gets or sets the assertion.
     /// </summary>
-    public interface IHasAssertion
-    {
-        /// <summary>
-        /// Gets or sets the assertion.
-        /// </summary>
-        Assertion? Assertion { get; set; }
-    }
+    Assertion? Assertion { get; set; }
 }

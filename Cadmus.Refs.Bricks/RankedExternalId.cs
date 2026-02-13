@@ -1,14 +1,13 @@
-﻿namespace Cadmus.Refs.Bricks
+﻿namespace Cadmus.Refs.Bricks;
+
+/// <summary>
+/// An <see cref="ExternalId"/> with a rank.
+/// </summary>
+/// <seealso cref="ExternalId" />
+public class RankedExternalId : ExternalId
 {
     /// <summary>
-    /// An <see cref="ExternalId"/> with a rank.
+    /// Gets or sets the rank.
     /// </summary>
-    /// <seealso cref="ExternalId" />
-    public class RankedExternalId : ExternalId
-    {
-        /// <summary>
-        /// Gets or sets the rank.
-        /// </summary>
-        public short Rank { get; set; }
-    }
+    public short Rank { get; set; }
 }
