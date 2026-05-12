@@ -4,6 +4,11 @@ WORKDIR /app
 EXPOSE 8080
 EXPOSE 443
 
+# Install Kerberos GSSAPI library for Npgsql on Linux platforms
+RUN if [ "$TARGETPLATFORM" = "linux/amd64" ] || [ "$TARGETPLATFORM" = "linux/arm64" ]; then \
+    apt-get update && apt-get install -y libgssapi-krb5-3 && rm -rf /var/lib/apt/lists/*; \
+    fi
+
 # Stage 2: build
 FROM --platform=$BUILDPLATFORM mcr.microsoft.com/dotnet/sdk:10.0 AS build
 WORKDIR /src

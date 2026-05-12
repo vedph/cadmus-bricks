@@ -11,14 +11,17 @@ Most of these models have a corresponding UI in the [UI bricks](https://github.c
 ```sh
 docker buildx create --use
 
-docker buildx build . --platform linux/amd64,linux/arm64,windows/amd64 -t vedph2020/cadmus-bricks-api:0.0.3 -t vedph2020/cadmus-bricks-api:latest --push
+docker buildx build . --platform linux/amd64,linux/arm64,windows/amd64 -t vedph2020/cadmus-bricks-api:0.0.4 -t vedph2020/cadmus-bricks-api:latest --push
 ```
 
 (replace with the current version).
 
 ## History
 
-- 2026-05-12: added API to use with bricks shell frontend (<http://localhost:5132/scalar/v1>).
+- 2026-05-12:
+  - added API to use with bricks shell frontend (<http://localhost:5132/scalar/v1>).
+  - more logging for seeders.
+  - fixes to seeder.
 
 ### 8.0.0
 
