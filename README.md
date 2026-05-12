@@ -11,7 +11,7 @@ Most of these models have a corresponding UI in the [UI bricks](https://github.c
 ```sh
 docker buildx create --use
 
-docker buildx build . --platform linux/amd64,linux/arm64,windows/amd64 -t vedph2020/cadmus-bricks-api:0.0.2 -t vedph2020/cadmus-bricks-api:latest --push
+docker buildx build . --platform linux/amd64,linux/arm64,windows/amd64 -t vedph2020/cadmus-bricks-api:0.0.3 -t vedph2020/cadmus-bricks-api:latest --push
 ```
 
 (replace with the current version).
