@@ -46,6 +46,10 @@ public class Program
         {
             options.Provider = MolDatabaseProvider.PostgreSQL;
             options.ConnectionString = configuration.GetConnectionString("MolDatabase");
+            options.EnableAutoInitialization = configuration.GetSection("Mol")
+                .GetValue<bool>("EnableAutoInitialization", true);
+            options.InitializationDelaySeconds = configuration.GetSection("Mol")
+                .GetValue<int>("InitializationDelaySeconds", 20);
         });
     }
 
