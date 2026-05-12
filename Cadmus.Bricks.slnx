@@ -5,6 +5,7 @@
     <File Path="PushLocal.bat" />
     <File Path="README.md" />
   </Folder>
+  <Project Path="Cadmus.Bricks.Api/Cadmus.Bricks.Api.csproj" Id="d0fcac7b-b453-4392-8682-b64d09341e01" />
   <Project Path="Cadmus.Mat.Bricks/Cadmus.Mat.Bricks.csproj" />
   <Project Path="Cadmus.Refs.Bricks/Cadmus.Refs.Bricks.csproj" />
 </Solution>

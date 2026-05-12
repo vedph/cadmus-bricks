@@ -8,6 +8,8 @@ Most of these models have a corresponding UI in the [UI bricks](https://github.c
 
 ## History
 
+- 2026-05-12: added API to use with bricks shell frontend (<http://localhost:5132/scalar/v1>).
+
 ### 8.0.0
 
 - 2026-02-13: ⚠️ renamed `AssertedDate` to `AssertedHistoricalDate` for uniformity.
