@@ -4,17 +4,40 @@
 		<TargetFramework>net10.0</TargetFramework>
 		<Nullable>enable</Nullable>
 		<ImplicitUsings>disable</ImplicitUsings>
-		<Version>0.0.4</Version>
-		<FileVersion>0.0.4</FileVersion>
-		<AssemblyVersion>0.0.4</AssemblyVersion>
+		<Version>0.0.5</Version>
+		<FileVersion>0.0.5</FileVersion>
+		<AssemblyVersion>0.0.5</AssemblyVersion>
 	</PropertyGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.8" />
+	  <None Remove="Assets\Auth.pgsql" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <EmbeddedResource Include="Assets\Auth.pgsql" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Fusi.Api.Auth.Controllers" Version="7.0.2" />
+		<PackageReference Include="Fusi.Api.Auth.Models" Version="7.0.2" />
+		<PackageReference Include="Fusi.DbManager.PgSql" Version="6.0.2" />
+		<PackageReference Include="MessagingApi" Version="6.0.0" />
+		<PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.9" />
 		<PackageReference Include="Mol.Api.Controllers" Version="0.0.7" />
 		<PackageReference Include="Mol.PgSql" Version="0.0.7" />
 		<PackageReference Include="Mufi.Api.Controllers" Version="2.0.1" />
-		<PackageReference Include="Scalar.AspNetCore" Version="2.14.14" />
+		<PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="10.0.2" />
+		<PackageReference Include="Polly" Version="8.7.0" />
+		<PackageReference Include="Scalar.AspNetCore" Version="2.16.2" />
+		<PackageReference Include="Serilog" Version="4.3.1" />
+		<PackageReference Include="Serilog.AspNetCore" Version="10.0.0" />
+		<PackageReference Include="Serilog.Exceptions" Version="8.4.0" />
+		<PackageReference Include="Serilog.Extensions.Hosting" Version="10.0.0" />
+		<PackageReference Include="Serilog.Sinks.Console" Version="6.1.1" />
+		<PackageReference Include="Serilog.Sinks.File" Version="7.0.0" />
+		<PackageReference Include="TaxoStore.Api.Controllers" Version="0.0.5" />
+		<PackageReference Include="TaxoStore.Core" Version="0.0.5" />
+		<PackageReference Include="TaxoStore.PgSql" Version="0.0.5" />
 	</ItemGroup>
 
 </Project>

@@ -18,6 +18,7 @@ docker buildx build . --platform linux/amd64,linux/arm64,windows/amd64 -t vedph2
 
 ## History
 
+- 2026-06-11: added taxonomies store to backend and consequently authentication.
 - 2026-06-08: updated packages.
 - 2026-05-12:
   - added API to use with bricks shell frontend (<http://localhost:5132/scalar/v1>).
