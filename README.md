@@ -1,5 +1,7 @@
 ﻿# Cadmus Bricks
 
+⚠️⚠️⚠️ **THIS IS OBSOLETE CODE. SEE <https://github.com/vedph/cadmus-core>** ⚠️⚠️⚠️
+
 This solution includes a set of projects containing only models shared across several different Cadmus parts.
 
 Most of these models have a corresponding UI in the [UI bricks](https://github.com/vedph/cadmus-bricks-shell), with a demo site at <https://cadmus-bricks.fusi-soft.com>.
